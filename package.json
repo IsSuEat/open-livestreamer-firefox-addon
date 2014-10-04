@@ -1,0 +1,23 @@
+{
+  "name": "open-livestreamer",
+  "title": "Open Livestreamer",
+  "id": "jid1-Y6BhyMM8GoZ3eA",
+  "description": "a basic add-on",
+  "author": "",
+  "license": "MPL 2.0",
+  "version": "0.1",
+  "preferences": [{
+      "name": "path",
+      "title": "Path to livestreamer",
+      "description": "Path to livestreamer executable",
+      "type": "string",
+      "value": "/usr/bin/livestreamerino"
+      },
+      {
+        "name": "quality",
+        "title": "Stream quality",
+        "description": "Change the quality of the stream",
+        "type": "string",
+        "value": "best"
+        }]
+}
