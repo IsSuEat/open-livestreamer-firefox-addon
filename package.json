@@ -4,6 +4,7 @@
     "id": "jid1-Y6BhyMM8GoZ3eA",
     "description": "open livestreamer directly from the browser when on twitch",
     "author": "issue",
+    "license": "MPL 2.0",
     "version": "0.1",
     "preferences": [{
         "name": "path",
@@ -14,7 +15,7 @@
     }, {
         "name": "quality",
         "title": "Stream quality",
-        "description": "Change the quality of the stream",
+        "description": "Change the quality of the stream, options are low, medium, best",
         "type": "string",
         "value": "best"
     }]
