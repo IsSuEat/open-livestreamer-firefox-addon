@@ -21,7 +21,7 @@
     }, {
         "name": "optargs",
         "title": "Optional arguments for livestreamer",
-        "description": "You can pass livestreamer options here, check livestreamer -h for what is available",
+        "description": "You can pass livestreamer options here in the form of --foo=bar,--baz=foo. Check livestreamer -h for what is available",
         "type": "string"
 
     }]
