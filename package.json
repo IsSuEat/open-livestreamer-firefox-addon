@@ -18,5 +18,11 @@
         "description": "Change the quality of the stream, options are low, medium, best",
         "type": "string",
         "value": "best"
+    }, {
+        "name": "optargs",
+        "title": "Optional arguments for livestreamer",
+        "description": "You can pass livestreamer options here, check livestreamer -h for what is available",
+        "type": "string"
+
     }]
 }
