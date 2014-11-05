@@ -5,7 +5,7 @@
     "description": "open livestreamer directly from the browser when on twitch",
     "author": "issue",
     "license": "MPL 2.0",
-    "version": "0.3",
+    "version": "0.4",
     "preferences": [{
         "name": "path",
         "title": "Path to livestreamer",
@@ -29,6 +29,6 @@
         "title": "Quality selection menu",
         "description": "Display a quality seleciton window everytime livestreamer is launched. ",
         "type": "bool",
-        "value": false
+        "value": true
     }]
 }

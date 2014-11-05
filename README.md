@@ -10,9 +10,14 @@ Planned features
 
 -	Add overlay to channel previews and launch livestreamer from there
 -	Launch livestreamer by rightclicking on a bookmark
--	On the fly quality change
+-	On the fly quality change (done)
 
 
 Changes
 -------
 -  Added quality selection menu when clicking on the icon (can be disabled via prefs)
+
+TODO
+----
+-  disable button on main stream site
+-  Give the user feedback if the stream doesnt support choosen quality
