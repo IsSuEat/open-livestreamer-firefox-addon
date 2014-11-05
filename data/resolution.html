@@ -1,18 +1,18 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-      <style type="text/css" >
+      <style type="text/css">
           .reso_btn {
-              width: 60px;
+              width: 85px;
           }
       </style>
-
   </head>
   <body>
-    Select Stream resolution:
-    <button class="reso_btn" name="low" id="low">Low</button>
-    <button class="reso_btn" name="medium" id="med">Medium</button>
+    <div id="status">
+        Select stream quality:
+    </div>
     <button class="reso_btn" name="best" id="high">High</button>
-
+    <button class="reso_btn" name="medium" id="med" onmouseover="document.getElementById('status').innerHTML='Not supported by all streams'" onmouseout="document.getElementById('status').innerHTML='Select stream quality'">Medium</button>
+    <button class="reso_btn" name="worst" id="low">Low</button>
   </body>
 </html>
