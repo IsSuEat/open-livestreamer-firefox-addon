@@ -5,7 +5,7 @@
     "description": "open livestreamer directly from the browser when on twitch",
     "author": "issue",
     "license": "MPL 2.0",
-    "version": "0.4",
+    "version": "0.5",
     "preferences": [{
         "name": "path",
         "title": "Path to livestreamer",
