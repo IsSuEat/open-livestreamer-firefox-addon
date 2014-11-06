@@ -1,18 +1,22 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-      <style type="text/css">
-          .reso_btn {
-              width: 85px;
-          }
-      </style>
-  </head>
-  <body>
-    <div id="status">
-        Select stream quality:
-    </div>
-    <button class="reso_btn" name="best" id="high">High</button>
-    <button class="reso_btn" name="medium" id="med" onmouseover="document.getElementById('status').innerHTML='Not supported by all streams'" onmouseout="document.getElementById('status').innerHTML='Select stream quality'">Medium</button>
-    <button class="reso_btn" name="worst" id="low">Low</button>
-  </body>
+<head>
+    <style type="text/css">
+        .reso_btn {
+            width: 85px;
+        }
+    </style>
+</head>
+<body>
+<div id="status">
+    Select stream quality:
+</div>
+<button class="reso_btn" name="best" id="high">High</button>
+<button class="reso_btn" name="medium" id="med"
+        onmouseover="document.getElementById('status').textContent='Not supported by all streams'"
+        onmouseout="document.getElementById('status').textContent='Select stream quality'">Medium
+</button>
+<button class="reso_btn" name="worst" id="low">Low</button>
+
+</body>
 </html>
