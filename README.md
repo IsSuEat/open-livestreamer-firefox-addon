@@ -9,12 +9,13 @@ Planned features
 ----------------
 
 -	Add overlay to channel previews and launch livestreamer from there
--	Launch livestreamer by rightclicking on a bookmark
 
 
 
 Changes
 -------
+-  resolution selector now shows a warning that not all streams may support the selected resolution
+-  context menu on twitch added
 -  now works on youtube videos aswell
 -  better quality selection
 -  Added quality selection menu when clicking on the icon (can be disabled via prefs)
@@ -22,4 +23,3 @@ Changes
 TODO
 ----
 -  disable button on main stream site
--  Give the user feedback if the stream doesnt support choosen quality

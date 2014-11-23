@@ -2,10 +2,10 @@
     "name": "open-livestreamer",
     "title": "Open Livestreamer",
     "id": "jid1-Y6BhyMM8GoZ3eA",
-    "description": "open livestreamer directly from the browser when on twitch",
+    "description": "open livestreamer directly from the browser when on twitch, hitbox or youtube",
     "author": "issue",
     "license": "MPL 2.0",
-    "version": "0.5",
+    "version": "1.0",
     "preferences": [{
         "name": "path",
         "title": "Path to livestreamer",
