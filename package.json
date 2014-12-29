@@ -6,6 +6,9 @@
     "author": "issue",
     "license": "MPL 2.0",
     "version": "1.0",
+    "permissions": {
+        "private-browsing": true
+    },
     "preferences": [{
         "name": "path",
         "title": "Path to livestreamer",
