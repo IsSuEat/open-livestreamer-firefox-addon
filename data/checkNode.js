@@ -8,7 +8,7 @@ self.on("click",function(node,data){
 self.on("context", function(node){
 	var url;
 	
-	// Check if node is an image and taking its parent node. 
+	// Check if node is an image and take its parent node. 
 	if (node.href == undefined && node.nodeName == 'IMG' && 
 		node.parentNode.href != undefined) {
 		url = node.parentNode.href;
@@ -18,6 +18,7 @@ self.on("context", function(node){
 		url = node.href;
 	}
 	
+	// Check if url matches Twitch.tv, hitbox.tv or youtube.com schemata.
 	if (undefined != url) {
 		// Twitch.tv matches.
 		if((!url.match("http://www.twitch.tv/directory") && !url.match("http://www.twitch.tv/signup") &&
