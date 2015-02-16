@@ -1,0 +1,46 @@
+var gurl;
+
+self.on("click",function(node,data){
+	self.postMessage(gurl);
+	delete gurl;
+});
+
+self.on("context", function(node){
+	var url;
+	
+	// Check if node is an image and taking its parent node. 
+	if (node.href == undefined && node.nodeName == 'IMG' && 
+		node.parentNode.href != undefined) {
+		url = node.parentNode.href;
+	} 
+	// Check if node is A element (url).
+	else if (node.href != undefined && node.nodeName == 'A') {
+		url = node.href;
+	}
+	
+	if (undefined != url) {
+		// Twitch.tv matches.
+		if((!url.match("http://www.twitch.tv/directory") && !url.match("http://www.twitch.tv/signup") &&
+			!url.match("http://www.twitch.tv/login")) && 
+			((url.split("/").length - 1) == 3 && url.match(/http(s)?:\/\/(\w+\.)*twitch.tv\/[A-Za-z0-9 _]+/i)) ||
+			 (url.split("/").length - 1) == 5 && url.match(/http(s)?:\/\/(\w+\.)*twitch.tv\/([A-Za-z0-9 _])+\/v\/[0-9]+/i)) {
+			gurl = url;
+			return true; 
+		} 
+		// hitbox.tv matches.
+		else if (((url.split("/").length - 1) == 3 && url.match(/http(s)?:\/\/(\w+\.)*hitbox.tv\/[A-Za-z0-9 _]+/i)) || 
+				((url.split("/").length - 1) == 4 && url.match(/http(s)?:\/\/(\w+\.)*hitbox.tv\/video\/[0-9]+/i))) {
+			gurl = url;
+			return true; 
+		}
+		// youtube.com matches.
+		else if (url.match(/http(s)?:\/\/www.youtube.com\/watch\?v=[A-Za-z0-9 _]+/i)) {
+			gurl = url;
+			return true; 
+		} 
+		// TODO: Add other websites
+	}
+	
+	return false;
+	
+});
