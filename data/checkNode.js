@@ -21,16 +21,15 @@ self.on("context", function(node){
 	// Check if url matches Twitch.tv, hitbox.tv or youtube.com schemata.
 	if (undefined != url) {
 		// Twitch.tv matches.
-		if((!url.match("http://www.twitch.tv/directory") && !url.match("http://www.twitch.tv/signup") &&
-			!url.match("http://www.twitch.tv/login")) && 
-			((url.split("/").length - 1) == 3 && url.match(/http(s)?:\/\/(\w+\.)*twitch.tv\/[A-Za-z0-9 _]+/i)) ||
-			 (url.split("/").length - 1) == 5 && url.match(/http(s)?:\/\/(\w+\.)*twitch.tv\/([A-Za-z0-9 _])+\/v\/[0-9]+/i)) {
+		if(!url.match("http://www.twitch.tv/directory") && !url.match("http://www.twitch.tv/signup") && !url.match("http://www.twitch.tv/login") && 
+			(url.match(/^http(s)?:\/\/(\w+\.)*twitch.tv\/[A-Za-z0-9 _]+$/i) ||
+			url.match(/^http(s)?:\/\/(\w+\.)*twitch.tv\/[A-Za-z0-9 _]+\/[a-z]+\/[0-9]+(\?t=([0-9]*h)?([0-9]*m)?([0-9]*s)?)*$/i))) {
 			gurl = url;
 			return true; 
 		} 
 		// hitbox.tv matches.
-		else if (((url.split("/").length - 1) == 3 && url.match(/http(s)?:\/\/(\w+\.)*hitbox.tv\/[A-Za-z0-9 _]+/i)) || 
-				((url.split("/").length - 1) == 4 && url.match(/http(s)?:\/\/(\w+\.)*hitbox.tv\/video\/[0-9]+/i))) {
+		else if (url.match(/^http(s)?:\/\/(\w+\.)*hitbox.tv\/[A-Za-z0-9 _]+$/i) || 
+				 url.match(/^http(s)?:\/\/(\w+\.)*hitbox.tv\/video\/[0-9]+$/i)) {
 			gurl = url;
 			return true; 
 		}
