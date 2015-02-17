@@ -5,7 +5,7 @@
     "description": "open livestreamer directly from the browser when on twitch, hitbox or youtube",
     "author": "issue",
     "license": "MPL 2.0",
-    "version": "1.0",
+    "version": "1.1",
     "preferences": [{
         "name": "path",
         "title": "Path to livestreamer",
