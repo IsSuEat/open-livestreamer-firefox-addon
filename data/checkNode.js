@@ -21,8 +21,10 @@ self.on("context", function(node){
 	// Check if url matches Twitch.tv, hitbox.tv or youtube.com schemata.
 	if (undefined != url) {
 		// Twitch.tv matches.
-		if(!url.match("http://www.twitch.tv/directory") && !url.match("http://www.twitch.tv/signup") && !url.match("http://www.twitch.tv/login") && 
-			url.match(/^http(s)?:\/\/(\w+\.)*twitch.tv\/[A-Za-z0-9 _-]+(\/[a-z]+\/[0-9]+(\?t=([0-9]*h)?([0-9]*m)?([0-9]*s)?)?)?$/i)) {
+		if(!url.match("http://www.twitch.tv/directory") && 
+		   !url.match("http://www.twitch.tv/signup") && 
+		   !url.match("http://www.twitch.tv/login") && 
+		    url.match(/^http(s)?:\/\/(\w+\.)*twitch.tv\/[A-Za-z0-9 _-]+(\/[a-z]+\/[0-9]+(\?t=([0-9]+h)?([0-9]+m)?([0-9]+s)?)?)?$/i)) {
 			gurl = url;
 			return true; 
 		} 
