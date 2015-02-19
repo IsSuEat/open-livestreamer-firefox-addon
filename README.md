@@ -5,6 +5,8 @@ This Addon opens a twitch.tv, hitbox.tv or youtube stream in your favourite medi
 
 Currently only tested on Linux and Windows using Firefox 35.
 
+Most up to date Version always here: https://github.com/IsSuEat/open-livestreamer-firefox-addon/releases
+
 Changes 1.2
 -------
 
