@@ -5,7 +5,7 @@
     "description": "open livestreamer directly from the browser when on twitch, hitbox or youtube",
     "author": "issue",
     "license": "MPL 2.0",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "permissions": {
         "private-browsing": true
     },
@@ -14,7 +14,7 @@
         "title": "Path to livestreamer",
         "description": "Path to livestreamer executable",
         "type": "string",
-        "value": "/usr/bin/livestreamer"
+        "value": ""
     }, {
         "name": "quality",
         "title": "Stream quality",
