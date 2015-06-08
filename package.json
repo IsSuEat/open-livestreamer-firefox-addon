@@ -2,10 +2,10 @@
     "name": "open-livestreamer",
     "title": "Open Livestreamer",
     "id": "jid1-Y6BhyMM8GoZ3eA",
-    "description": "open livestreamer directly from the browser when on twitch, hitbox or youtube",
+    "description": "Open livestreamer directly from your browser", 
     "author": "issue",
     "license": "MPL 2.0",
-    "version": "1.2.3",
+    "version": "1.9",
     "permissions": {
         "private-browsing": true
     },
@@ -30,7 +30,7 @@
     },{
         "name": "qualityselector",
         "title": "Quality selection menu",
-        "description": "Display a quality seleciton window everytime livestreamer is launched. ",
+        "description": "Display a quality selection window everytime livestreamer is launched. ",
         "type": "bool",
         "value": true
     }]
