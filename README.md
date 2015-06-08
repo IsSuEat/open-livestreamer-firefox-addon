@@ -7,4 +7,6 @@ Most up to date version and changelog always here: https://github.com/IsSuEat/op
 
 Thanks to:
 -------
+-  julianrichen
 -  baizon
+
