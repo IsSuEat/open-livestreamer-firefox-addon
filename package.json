@@ -35,7 +35,7 @@
         "value": true
     },{
         "name": "chatselector",
-        "title": "Chat selection menu",
+        "title": "Twitch chat selection menu",
         "description": "Choose if the twitch chat is opened when a stream is started. ",
         "type": "radio",
         "value": "none",
