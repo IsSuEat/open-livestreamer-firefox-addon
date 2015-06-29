@@ -11,7 +11,7 @@ function buildLoading(status) {
     quality.innerHTML = '';
     // Add or remove
     if(status) {
-        quality.style.backgroundImage = "url(../img/loading.gif)";
+        quality.style.backgroundImage = "url(../img/loading.svg)";
         quality.style.height = "39px";
         quality.style.borderTop = "1px solid #cccccc"
     } else {
