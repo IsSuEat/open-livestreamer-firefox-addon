@@ -3,7 +3,7 @@ function updateStatus(msg) {
     // Remove loading message to default to "box" class staus
     status.classList.remove("loading");
     // Insert message
-    status.innerHTML = msg;
+    status.textContent = msg;
 }
 function buildLoading(status) {
     var quality = document.getElementById("quality");
