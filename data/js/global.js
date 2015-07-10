@@ -1,5 +1,8 @@
 function updateStatus(msg) {
-    var status = document.getElementById("status");
+    var status  = document.getElementById("status"),
+        quality = document.getElementById("quality");
+    // Clean quality
+    quality.innerHTML = '';
     // Remove loading message to default to "box" class staus
     status.classList.remove("loading");
     // Insert message
@@ -11,13 +14,13 @@ function buildLoading(status) {
     quality.innerHTML = '';
     // Add or remove
     if(status) {
-        quality.style.backgroundImage = "url(../img/loading.svg)";
-        quality.style.height = "39px";
-        quality.style.borderTop = "1px solid #cccccc"
+        quality.innerHTML = self.options.loadingPath;
+        quality.className = 'loading center';
+        quality.style.borderTopWidth = "1px";
     } else {
-        quality.style.backgroundImage = "";
-        quality.style.height = "auto";
-        quality.style.borderTop = "none"
+        quality.innerHTML = '';
+        quality.className = '';
+        quality.style.borderTopWidth = "0px"
     }
 }
 function buildQuality(payload) {

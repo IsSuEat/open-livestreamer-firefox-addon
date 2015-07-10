@@ -11,12 +11,13 @@ body {
 #quality {
     background-repeat: no-repeat;
     background-position: center center;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+    color: #313739;
 }
 #quality input {
     background: none;
     border: none;
-    border-top: 1px solid #cccccc;
-    color: #000000;
+    border-top: 1px solid rgba(0, 0, 0, .3);
     cursor: pointer;
     display: block;
     margin: 0;
@@ -27,8 +28,16 @@ body {
     width: 100%;
 }
 #quality input:hover {
-    background: #dddddd;
+    background: rgba(0, 0, 0, .1);
 }
 .loading {
-    padding: 14px 0;
+    padding: 7px 0;
 }
+
+/* Dark theme */
+body#dark, #dark #quality, #dark #quality input {
+    color: #ffffff;
+}
+#dark svg rect {
+    fill: #ffffff;
+} 
