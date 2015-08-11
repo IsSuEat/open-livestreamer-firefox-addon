@@ -4,8 +4,8 @@
     "id": "jid1-Y6BhyMM8GoZ3eA@jetpack",
     "description": "Open livestreamer directly from your browser", 
     "author": "issue",
-    "license": "MPL 2.0",
-    "version": "2.0.1",
+    "license": "GPL v3",
+    "version": "2.0.2",
     "main": "lib/main.js",
     "permissions": {
         "private-browsing": true
