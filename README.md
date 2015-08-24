@@ -5,6 +5,10 @@ This Addon opens sites like twitch.tv, hitbox.tv, YouTube, etc.. with [Livestrea
 
 Most up to date version and changelog always here: https://github.com/IsSuEat/open-livestreamer-firefox-addon/releases
 
+## Need Help?
+
+Check the [wiki](https://github.com/IsSuEat/open-livestreamer-firefox-addon/wiki) or open an [issue](https://github.com/IsSuEat/open-livestreamer-firefox-addon/issues)
+
 Thanks to:
 -------
 -  julianrichen
