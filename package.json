@@ -34,5 +34,24 @@
         "description": "Display a quality selection window everytime livestreamer is launched. ",
         "type": "bool",
         "value": true
+    },{
+        "name": "chatselector",
+        "title": "Twitch chat selection menu",
+        "description": "Choose if the twitch chat is opened when a stream is started. ",
+        "type": "radio",
+        "value": "none",
+        "options": [
+        {
+            "value": "none",
+            "label": "No chat"
+        },
+        {
+            "value": "popup",
+            "label": "Popup"
+        },
+        {
+            "value": "irc",
+            "label": "IRC"
+        }]
     }]
 }
