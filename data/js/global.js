@@ -49,7 +49,11 @@ function buildQuality(payload) {
         self.port.emit("resolution-selected", [url, e.target.name]);
     }
 }
+function changeTheme(theme) {
+    document.body.id = theme;
+}
 // Listen for
 self.port.on("status", updateStatus);
 self.port.on("loading", buildLoading);
 self.port.on("quality", buildQuality);
+self.port.on("theme", changeTheme)
