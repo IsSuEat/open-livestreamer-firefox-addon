@@ -34,5 +34,21 @@
         "description": "Display a quality selection window everytime livestreamer is launched. ",
         "type": "bool",
         "value": true
+    },{
+    	"name": "theme",
+    	"title": "Theme",
+    	"description": "Use the light or dark theme or let Open in Livestreamer detect it automatically (results may vary).",
+        "type": "menulist",
+        "value": "auto",
+	"options": [{
+		"value": "auto",
+		"label": "Auto"
+	}, {
+		"value": "light",
+		"label": "Light"
+	}, {
+		"value": "dark",
+		"label": "Dark"
+	}]
     }]
 }
