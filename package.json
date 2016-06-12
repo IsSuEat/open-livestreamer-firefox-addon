@@ -31,7 +31,7 @@
     },{
         "name": "qualityselector",
         "title": "Quality selection menu",
-        "description": "Display a quality selection window everytime livestreamer is launched. ",
+        "description": "Display a quality selection window every time livestreamer is launched. ",
         "type": "bool",
         "value": true
     },{
