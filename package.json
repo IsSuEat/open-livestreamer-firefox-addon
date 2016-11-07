@@ -5,7 +5,7 @@
     "description": "Open livestreamer directly from your browser", 
     "author": "issue",
     "license": "GPL-3.0",
-    "version": "2.0.3",
+    "version": "2.1.0",
     "main": "lib/main.js",
     "permissions": {
         "private-browsing": true
@@ -32,6 +32,12 @@
         "name": "qualityselector",
         "title": "Quality selection menu",
         "description": "Display a quality selection window everytime livestreamer is launched. ",
+        "type": "bool",
+        "value": true
+    },{
+        "name": "togglecontextmenu",
+        "title": "Enable the context menu entry",
+        "description": "Shows a context menu entry to launch livestreamer (requires Firefox restart)",
         "type": "bool",
         "value": true
     },{
